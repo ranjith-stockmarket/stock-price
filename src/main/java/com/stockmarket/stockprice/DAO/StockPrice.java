@@ -5,7 +5,6 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
-import java.sql.Time;
 import java.util.Date;
 
 @Entity
@@ -26,7 +25,7 @@ public class StockPrice {
     private Date date;
 
     @Column(name = "time")
-    private Time time;
+    private String time;
 
     @Column(name = "ipo_stock_exchange_id")
     private Long ipoStockExchangeId;

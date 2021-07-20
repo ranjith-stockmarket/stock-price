@@ -19,7 +19,7 @@ public class StockPriceController {
     }
 
     @PostMapping("/ipo-stock-exchange/add")
-    public ResponseEntity<Object> addIpoStockExchange(@RequestBody AddIpoStockExchangeDTO addIpoStockExchangeDTO){
+    public ResponseEntity<?> addIpoStockExchange(@RequestBody AddIpoStockExchangeDTO addIpoStockExchangeDTO){
         return stockPriceService.addIpoStockExchange(addIpoStockExchangeDTO).getResponse();
     }
 

@@ -10,11 +10,11 @@ public class ServiceResponse {
     private final HttpStatus status;
     private final Object body;
 
-    public ResponseEntity<Object> getResponse() {
+    public ResponseEntity<?> getResponse() {
         return ResponseEntity.status(status).body(body);
     }
 
-    public ResponseEntity<Object> getResponse(HttpHeaders httpHeaders) {
+    public ResponseEntity<?> getResponse(HttpHeaders httpHeaders) {
         return ResponseEntity.status(status).headers(httpHeaders).body(body);
     }
 }
